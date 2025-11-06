@@ -48,8 +48,9 @@ The repository contains **three main folders**, corresponding to the examples pr
 ```
 
 Each folder contains:
-- The **main script** (`main_exampleX.m`) that reproduces the results from the corresponding section in the paper.  
-- Several **supporting functions/scripts** used internally for assembling matrices, solving Riccati equations, computing errors, and generating plots.  
+- The **main scripts** (`Main_Table_3_Figure_4.m`, `Main_Table_3_Figure_4.m` etc.) that reproduces the results from the corresponding section in the paper.  
+- Several **supporting functions/scripts** used internally for assembling matrices, initial conditions, computing errors, generating plots, etc..
+- Each main script in this repository is named according to the corresponding Table or Figure number presented in the manuscript. For example, Main_Figure_3_LinVis_Stab.m → generates Figure 3 (stabilized solution), Main_Table_1_Figure_3c_LinVisStab.m → reproduces Table 1 and Figure 3c results, etc.
 
 ---
 
@@ -60,16 +61,17 @@ Each folder contains:
 ---
 
 ## How to Run
-1. Open any of the example folders (`Example1_Linear`, `Example2_Nonlinear`, or `Example3_ErrorAnalysis`).  
-2. Run the main driver script (`main_exampleX.m`) to reproduce the results.  
-3. The results (stabilized solutions, error plots, and convergence tables) will be shown in command window or a pop-up window.
+1. Open any of the example folders (`Example_1_Linear_System`, `Example_2_Nonlinear_NoCtrl`, or `Example_3_Stab_NonLinear_System`).  
+2. Run the main driver script (`Main_Figure_2_LinVis_NoCtrl.m`) to reproduce the results.
+3. Each main script in this repository is named according to the corresponding Table or Figure number presented in the manuscript. For example, Main_Figure_3_LinVis_Stab.m → generates Figure 3 (stabilized solution), Main_Table_1_Figure_3c_LinVisStab.m → reproduces Table 1 and Figure 3c results, etc.
+4. The results (stabilized solutions, error plots, and convergence tables) will be shown in command window or a pop-up window.
 
 ---
 
 ## Expected Output
 - Time evolution plots showing exponential stabilization/unstable of the system.  
 - Tables of L² and H¹ errors showing quadratic and linear, respectively, convergence (as reported in the paper).  
-- Numerical values may differ slightly (≈5-7%) from the manuscript due to mesh resolution, solver tolerances, and *random initial guess*.
+- Numerical values may differ slightly (≈5%) from the manuscript due to mesh resolution, solver tolerances, and *random initial guess*.
 
 ---
 
@@ -87,10 +89,10 @@ These do **not** affect the qualitative behavior or convergence rates reported i
 
 ## Citation
 If you use this code, please cite:
-> Wasim Akram (2025). *Feedback Stabilization and Finite Element Error Analysis of Viscous Burgers Equation around Non-Constant Steady State*, 
-	Computers and Mathematics with Applications, arXiv:2406.01553, https://arxiv.org/abs/2406.01553
+> Wasim Akram, *Feedback Stabilization and Finite Element Error Analysis of Viscous Burgers Equation around Non-Constant Steady State*, 
+	Computers and Mathematics with Applications, (2025), arXiv:2406.01553, https://arxiv.org/abs/2406.01553
 
 ---
 
 ## Code DOI
-`[To be added after upload — e.g., https://doi.org/10.5281/zenodo.xxxxxxx]`
+`[https://github.com/wakram2k15/CamwaBurgers](https://github.com/wakram2k15/CamwaBurgers)`
